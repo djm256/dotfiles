@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 filetype indent on " per-filetype config
 
 set dictionary=/usr/share/dict/words
