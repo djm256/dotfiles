@@ -1,6 +1,7 @@
 execute pathogen#infect()
 
 filetype indent on " per-filetype config
+filetype plugin on
 
 set dictionary=/usr/share/dict/words
 "set ignorecase
