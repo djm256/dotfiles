@@ -9,6 +9,8 @@ source ~/antigen/antigen.zsh
 # Load the oh-my-zsh's library (used for themes mostly)
 antigen use oh-my-zsh
 
+antigen bundle git
+
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
@@ -65,12 +67,7 @@ alias xml='xml_pp'
 alias be='bundle exec'
 alias bi='bundle install'
 
-alias ggpull='git fetch && git pull origin master'
-alias gb='git branch'
-alias gba='git branch -a'
-alias gs='git status'
-alias gl='git log'
-alias gd='git diff'
+alias gs='echo Use gst!'
 
 if [ -x ~/.otb/otb.sh ]; then
     source $HOME/.otb/otb.sh
