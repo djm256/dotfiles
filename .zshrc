@@ -10,6 +10,7 @@ source ~/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle git
+antigen bundle bundler
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -63,9 +64,6 @@ alias ls="ls --color=auto -F"
 alias ll="ls -l"
 alias la='ls -a'
 alias xml='xml_pp'
-
-alias be='bundle exec'
-alias bi='bundle install'
 
 alias gs='echo Use gst!'
 
