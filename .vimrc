@@ -3,9 +3,7 @@ execute pathogen#infect()
 filetype indent on " per-filetype config
 filetype plugin on
 
-set dictionary=/usr/share/dict/words
 set nocp
-set ruler
 set showmatch
 set tabstop=2
 set shiftwidth=2
