@@ -21,7 +21,7 @@ export OTB_DIR="$HOME/Code/247"
 export LESS=' -R '
 export GREP_OPTIONS="--color=always"
 
-if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ]; do
+if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ]; then
     export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 else
     echo "source-hightlight not installed"
