@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/vim-fugative"]
 	path = .vim/bundle/vim-fugative
 	url = https://github.com/tpope/vim-fugitive
+[submodule "antigen"]
+	path = antigen
+	url = https://github.com/zsh-users/antigen
