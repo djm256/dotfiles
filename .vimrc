@@ -7,8 +7,8 @@ set dictionary=/usr/share/dict/words
 set nocp
 set ruler
 set showmatch
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set list listchars=tab:»·,trail:·
 set ttyfast
@@ -25,8 +25,7 @@ set t_Co=256
 set colorcolumn=80
 set cursorline
 
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
-autocmd Filetype xhtml setlocal ts=2 sts=2 sw=2
+autocmd Filetype perl setlocal ts=4 sts=4 sw=4
 
 let mapleader = ","
 
