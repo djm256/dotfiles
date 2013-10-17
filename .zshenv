@@ -10,7 +10,7 @@
 #
 # Global Order: zshenv, zprofile, zshrc, zlogin
 
-umask 002
+umask 007
 ulimit -c unlimited
 
 export PAGER="less"
