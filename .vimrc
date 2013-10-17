@@ -26,6 +26,7 @@ set colorcolumn=80
 set cursorline
 
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype xhtml setlocal ts=2 sts=2 sw=2
 
 let mapleader = ","
 
