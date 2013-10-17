@@ -8,7 +8,7 @@
     aa = add --all
     st = status
     praise = blame
-    fetch = fetch -v
+    fa = fetch --all
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [color]
