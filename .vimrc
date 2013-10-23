@@ -26,6 +26,12 @@ set number
 
 autocmd Filetype perl setlocal ts=4 sts=4 sw=4
 
+" vim-flavored-markdown
+augroup markdown
+  au!
+  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
+
 let mapleader = ","
 
 nmap <leader>i :w<CR>:!aspell -x check %<CR>:e %<CR>
