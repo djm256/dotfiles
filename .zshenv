@@ -28,5 +28,5 @@ else
 fi
 
 #export PATH="/usr/local/share/perl/5.14.2/auto/share/dist/Cope:$PATH:$HOME/bin:$OTB_DIR/unicorns:$HOME/.rvm/bin"
-export PATH="$PATH:$HOME/bin:$OTB_DIR/unicorns:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/bin:/sbin:/usr/sbin:$OTB_DIR/unicorns:$HOME/.rvm/bin"
 
