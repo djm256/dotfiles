@@ -26,7 +26,7 @@ antigen apply
 #prompt adam1
 
 setopt histignorealldups
-#sharehistory
+setopt no_share_history
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
