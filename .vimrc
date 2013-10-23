@@ -22,6 +22,7 @@ set laststatus=2
 set t_Co=256
 set colorcolumn=80
 set cursorline
+set number
 
 autocmd Filetype perl setlocal ts=4 sts=4 sw=4
 
