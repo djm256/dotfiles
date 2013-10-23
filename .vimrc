@@ -39,6 +39,11 @@ augroup markdown
   au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
 
+" vim-ruby-xmpfilter
+" Needs gem rcodetools installed
+autocmd FileType ruby map <buffer> <F4> <Plug>(xmpfilter-mark)
+autocmd FileType ruby map <buffer> <F5> <Plug>(xmpfilter-run)
+
 let mapleader = ","
 
 nmap <leader>i :w<CR>:!aspell -x check %<CR>:e %<CR>

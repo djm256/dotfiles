@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-flavored-markdown"]
 	path = .vim/bundle/vim-flavored-markdown
 	url = git://github.com/jtratner/vim-flavored-markdown.git
+[submodule ".vim/bundle/vim-ruby-xmpfilter"]
+	path = .vim/bundle/vim-ruby-xmpfilter
+	url = https://github.com/t9md/vim-ruby-xmpfilter.git
