@@ -24,7 +24,7 @@ export GREP_OPTIONS="--color=always"
 if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ]; then
     export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 else
-    echo "source-hightlight not installed"
+    echo "source-highlight not installed"
 fi
 
 #export PATH="/usr/local/share/perl/5.14.2/auto/share/dist/Cope:$PATH:$HOME/bin:$OTB_DIR/unicorns:$HOME/.rvm/bin"
