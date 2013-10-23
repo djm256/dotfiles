@@ -41,6 +41,18 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 nmap <leader>t :!rspec --colour<CR>
 imap <c-l> <space>=><space>
 
+" force vim
+map <Left> :echo "damnit!"<cr>
+map <Right> :echo "you suck!"<cr>
+map <Up> :echo "this is why you fail"<cr>
+map <Down> :echo "nooooo!"<cr>
+
+" evil mode
+"inoremap <Left> <nop>
+"inoremap <Right> <nop>
+"inoremap <Up> <nop>
+"inoremap <Down> <nop>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else, do completion.
