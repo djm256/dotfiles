@@ -3,6 +3,12 @@ execute pathogen#infect()
 filetype indent on " per-filetype config
 filetype plugin on
 
+syntax on
+
+highlight ColorColumn ctermbg=17 guibg=#101020
+highlight CursorLine cterm=NONE ctermbg=17 guibg=#101020
+highlight Comment ctermfg=blue
+
 set nocp
 set showmatch
 set tabstop=2
@@ -67,10 +73,4 @@ function! InsertTabWrapper()
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
-
-syntax on
-
-highlight ColorColumn ctermbg=17 guibg=#101020
-highlight CursorLine cterm=NONE ctermbg=17 guibg=#101020
-highlight Comment ctermfg=blue
 
