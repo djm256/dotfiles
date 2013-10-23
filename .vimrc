@@ -23,6 +23,7 @@ set t_Co=256
 set colorcolumn=80
 set cursorline
 set number
+set scrolloff=999             " keep cursor in the middle of the screen
 
 autocmd Filetype perl setlocal ts=4 sts=4 sw=4
 
