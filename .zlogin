@@ -6,7 +6,3 @@
 #
 # Global Order: zshenv, zprofile, zshrc, zlogin
 
-echo
-fortune
-echo
-
