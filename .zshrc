@@ -27,6 +27,7 @@ antigen apply
 
 setopt histignorealldups
 setopt no_share_history
+unsetopt correct_all
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
