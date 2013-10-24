@@ -21,6 +21,14 @@ export OTB_DIR="$HOME/Code/247"
 export LESS=' -R '
 export GREP_OPTIONS="--color=always"
 
+# Ruby GC settings for faster spec suite runs.
+# From https://github.otbeach.com/gist/matthew-house/696
+export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=100000000
+export RUBY_HEAP_FREE_MIN=500000
+
 if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ]; then
     export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 else
