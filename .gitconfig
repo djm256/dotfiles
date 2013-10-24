@@ -18,4 +18,4 @@
     # Cache for two days
     helper = cache --timeout=172800
 [push]
-	default = simple
+  #default = simple
