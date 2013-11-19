@@ -32,7 +32,7 @@
     foreground_color = "#b5b5b5"
     scroll_on_output = False
     show_titlebar = False
-    font = Lucida Console Semi-Condensed 11
+    font = Lucida Console Semi-Condensed 9
     background_color = "#00003f"
     allow_bold = False
 [layouts]
