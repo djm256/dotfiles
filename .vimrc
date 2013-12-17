@@ -55,10 +55,10 @@ nmap <leader>t :!rspec --colour<CR>
 imap <c-l> <space>=><space>
 
 " force vim
-"map <Left> :echo "No!"<cr>
-"map <Right> :echo "No!"<cr>
-"map <Up> :echo "No!"<cr>
-"map <Down> :echo "No!"<cr>
+map <Left> :echo "No!"<cr>
+map <Right> :echo "No!"<cr>
+map <Up> :echo "No!"<cr>
+map <Down> :echo "No!"<cr>
 
 " evil mode
 "inoremap <Left> <nop>
