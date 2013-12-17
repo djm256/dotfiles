@@ -33,6 +33,7 @@ set scrolloff=999             " keep cursor in the middle of the screen
 
 autocmd Filetype perl setlocal ts=4 sts=4 sw=4
 autocmd Filetype eruby setlocal ts=4 sts=4 sw=4
+autocmd Filetype xml setlocal ts=4 sts=4 sw=4
 
 " vim-flavored-markdown
 augroup markdown
