@@ -67,7 +67,6 @@ alias la='ls -a'
 alias xml='xml_pp'
 
 alias r='be rspec'
-alias gs='echo Use gst!'
 
 if [ -x ~/.otb/otb.sh ]; then
     source $HOME/.otb/otb.sh
