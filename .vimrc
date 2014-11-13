@@ -30,10 +30,14 @@ set colorcolumn=80
 set cursorline
 set number
 set scrolloff=999             " keep cursor in the middle of the screen
+set guifont="Lucida Console 9"
+"set guioptions -=m            " remove menubar
+"set guioptions -=T            " remove toolbar
 
 autocmd Filetype perl setlocal ts=4 sts=4 sw=4
-autocmd Filetype eruby setlocal ts=4 sts=4 sw=4
+autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype xml setlocal ts=4 sts=4 sw=4
+autocmd BufNewFile,BufRead *.ejs set filetype=html
 
 " vim-flavored-markdown
 augroup markdown
@@ -55,10 +59,10 @@ nmap <leader>t :!rspec --colour<CR>
 imap <c-l> <space>=><space>
 
 " force vim
-map <Left> :echo "No!"<cr>
-map <Right> :echo "No!"<cr>
-map <Up> :echo "No!"<cr>
-map <Down> :echo "No!"<cr>
+"map <Left> :echo "No!"<cr>
+"map <Right> :echo "No!"<cr>
+"map <Up> :echo "No!"<cr>
+"map <Down> :echo "No!"<cr>
 
 " evil mode
 "inoremap <Left> <nop>
@@ -81,3 +85,6 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
+function! Ctags()
+  execute ':!ctags-exuberant --exclude=public --exclude=log --exclude=config --extra=+f -R * '
+endfunction

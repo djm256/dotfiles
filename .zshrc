@@ -8,6 +8,7 @@ source ~/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library (used for themes mostly)
 antigen use oh-my-zsh
+unsetopt auto_name_dirs
 
 antigen bundle git
 antigen bundle bundler
@@ -64,20 +65,23 @@ alias less="less -I"
 alias ls="ls --color=auto -F"
 alias ll="ls -l"
 alias la='ls -a'
+alias lth='ls -lt | head'
 alias xml='xml_pp'
 
-alias r='be rspec'
+alias r='bundle exec rspec -rspec_helper'
 
 if [ -x ~/.otb/otb.sh ]; then
     source $HOME/.otb/otb.sh
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 psg() {
   if [ "$*" != "" ]; then
     ps auxwww | grep $* | grep -v grep
   fi
+}
+
+bundle-grep() {
+  grep -r "$@" `bundle show --paths`
 }
 
 #function git-bhist(){
@@ -86,3 +90,24 @@ psg() {
 #    done | sort -r
 #}
 
+# https://github.otbeach.com/gist/radek-molenda/673
+git_root_dir() { echo $(git rev-parse --show-toplevel); }
+
+otb_app_name() { echo "$1" | sed 's/\/current//' | sed 's/\/.*\/\(.*\)/\1/'; }
+
+otb_current_app() { otb_app_name $(git_root_dir); }
+
+current_branch() { git branch | grep '*' | cut -b3-; }
+
+otb_comparision_url() { echo "https://github.otbeach.com/onthebeach/$(otb_current_app)/compare/${1-master}...${2-$(current_branch)}"; }
+
+#it $WEB_BROWSER is not set it defaults to firefox
+otb_compare() { sensible-browser $(otb_comparision_url $1); }
+
+remote_branches() { for x in $(git remote); do git branch -r | sed -e"s/.*$x\///"; done | sort | uniq; return 0; }
+
+_remote_branches_complete_() {
+  reply=( $(remote_branches) )
+}
+
+compctl -K _remote_branches_complete_ otb_compare

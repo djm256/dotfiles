@@ -26,3 +26,6 @@
 
 [merge]
   tool = meld
+
+[commit]
+  template = ~/.git_commit_message

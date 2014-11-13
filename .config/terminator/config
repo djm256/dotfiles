@@ -26,6 +26,7 @@
     scrollbar_position = hidden
     palette = "#2e3436:#cc0000:#4e9a06:#c4a000:#204a87:#75507b:#06989a:#d3d7cf:#3c3c3c:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     visible_bell = True
+    background_image = None
     scrollback_lines = 100000
     use_system_font = False
     cursor_color = "#696969"
