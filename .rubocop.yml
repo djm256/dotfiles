@@ -1,2 +1,5 @@
 Style/Documentation:
-    Enabled: false
+  Enabled: false
+
+Style/TrailingComma:
+  Enabled: false
