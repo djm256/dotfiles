@@ -9,6 +9,7 @@ highlight ColorColumn ctermbg=17 guibg=#101020
 highlight CursorLine cterm=NONE ctermbg=17 guibg=#101020
 highlight Comment ctermfg=blue
 
+set runtimepath^=~/.vim/bundle/ctrlp
 set nocp
 set showmatch
 set tabstop=2
