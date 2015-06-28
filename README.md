@@ -5,7 +5,7 @@
 Debian/Ubuntu systems:
 
 ```
-sudo apt-get install git zsh source-highlight
+sudo apt-get install git zsh source-highlight realpath
 ```
 
 ### Clone git repo
