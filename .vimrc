@@ -5,6 +5,10 @@ filetype plugin on
 
 syntax on
 
+if has("gui_running")
+  colorscheme darkblue
+endif
+
 highlight ColorColumn ctermbg=17 guibg=#101020
 highlight CursorLine cterm=NONE ctermbg=17 guibg=#101020
 highlight Comment ctermfg=blue
