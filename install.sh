@@ -31,7 +31,7 @@ function main {
   sanity_check
   update_submodules
   create_symlinks
-  echo "Done"
+  echo "Dotfile installation is complete"
 }
 
 function sanity_check {
