@@ -78,6 +78,7 @@ function create_symlinks() {
       fi
     fi
 
+    mkdir -p `dirname $TARGET`
     ln -s $SOURCE $TARGET
     if [ $? = 1 ]; then
       echo "Problem creating symlink"
