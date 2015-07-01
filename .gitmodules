@@ -13,8 +13,8 @@
 [submodule ".vim/bundle/vim-fugative"]
 	path = .vim/bundle/vim-fugative
 	url = https://github.com/tpope/vim-fugitive
-[submodule "antigen"]
-	path = antigen
+[submodule ".antigen"]
+	path = .antigen
 	url = https://github.com/zsh-users/antigen
 [submodule ".vim/bundle/vim-flavored-markdown"]
 	path = .vim/bundle/vim-flavored-markdown

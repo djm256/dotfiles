@@ -8,7 +8,7 @@ REQUIRED_BINARIES=(
 )
 
 DOTFILES=(
-  antigen
+  .antigen
   .config/terminator
   .git_commit_message
   .gitconfig
@@ -87,5 +87,6 @@ function create_symlinks() {
   done
 }
 
+umask 027
 main
 exit 0

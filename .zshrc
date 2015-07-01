@@ -4,7 +4,7 @@
 #
 # Global Order: zshenv, zprofile, zshrc, zlogin
 
-source ~/antigen/antigen.zsh
+source ~/.antigen/antigen.zsh
 
 # Load the oh-my-zsh's library (used for themes mostly)
 antigen use oh-my-zsh
