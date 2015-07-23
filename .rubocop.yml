@@ -3,3 +3,9 @@ Style/Documentation:
 
 Style/TrailingComma:
   Enabled: false
+
+Style/DotPosition:
+  Enabled: false
+
+Style/Blocks:
+  Enabled: false
