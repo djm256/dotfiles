@@ -2,7 +2,7 @@
 
 ```shell
 # Prerequisites (Debian/Ubuntu systems)
-sudo apt-get install git zsh source-highlight realpath
+sudo apt-get install git zsh source-highlight realpath vim
   
 # Clone git repo
 git clone https://github.com/djm256/dotfiles.git
