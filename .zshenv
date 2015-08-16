@@ -19,7 +19,6 @@ export CONSOLEBROWSER="/usr/bin/links"
 export MAKEFLAGS=-j`grep -c ^processor /proc/cpuinfo`
 export OTB_DIR="$HOME/Code/247"
 export LESS=' -R '
-export GREP_OPTIONS="--color=always"
 
 # Ruby GC settings for faster spec suite runs.
 # From https://github.otbeach.com/gist/matthew-house/696
