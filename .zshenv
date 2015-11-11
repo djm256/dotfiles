@@ -17,7 +17,6 @@ export PAGER="less"
 export EDITOR="vim"
 export CONSOLEBROWSER="/usr/bin/links"
 export MAKEFLAGS=-j`grep -c ^processor /proc/cpuinfo`
-export OTB_DIR="$HOME/Code/247"
 export LESS=' -R '
 
 # Ruby GC settings for faster spec suite runs.
@@ -34,8 +33,7 @@ else
     echo "source-highlight not installed"
 fi
 
-#export PATH="/usr/local/share/perl/5.14.2/auto/share/dist/Cope:$PATH:$HOME/bin:$OTB_DIR/unicorns:$HOME/.rvm/bin"
-export PATH="$PATH:$HOME/bin:/sbin:/usr/sbin:$OTB_DIR/unicorns:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/bin:/sbin:/usr/sbin:$HOME/.rvm/bin"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
