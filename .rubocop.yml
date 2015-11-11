@@ -6,6 +6,3 @@ Style/TrailingComma:
 
 Style/DotPosition:
   Enabled: false
-
-Style/Blocks:
-  Enabled: false
