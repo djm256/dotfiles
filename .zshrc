@@ -111,4 +111,8 @@ _remote_branches_complete_() {
   reply=( $(remote_branches) )
 }
 
+stupid_spec() {
+  be spec `find spec -name '*_spec.rb' | sort`
+}
+
 compctl -K _remote_branches_complete_ otb_compare
