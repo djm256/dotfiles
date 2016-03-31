@@ -100,7 +100,7 @@ otb_current_app() { otb_app_name $(git_root_dir); }
 
 current_branch() { git branch | grep '*' | cut -b3-; }
 
-otb_comparision_url() { echo "https://github.otbeach.com/onthebeach/$(otb_current_app)/compare/${1-master}...${2-$(current_branch)}"; }
+otb_comparision_url() { echo "https://github.otbeach.com/onthebeach/$(otb_current_app)/compare/${1-master}...search-team:${2-$(current_branch)}"; }
 
 #it $WEB_BROWSER is not set it defaults to firefox
 otb_compare() { sensible-browser $(otb_comparision_url $1); }
