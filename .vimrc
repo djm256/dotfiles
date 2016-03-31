@@ -9,10 +9,6 @@ if has("gui_running")
   colorscheme darkblue
 endif
 
-highlight ColorColumn ctermbg=17 guibg=#101020
-highlight CursorLine cterm=NONE ctermbg=17 guibg=#101020
-highlight Comment ctermfg=blue
-
 set runtimepath^=~/.vim/bundle/ctrlp
 set nocp
 set showmatch
@@ -38,6 +34,10 @@ set scrolloff=999             " keep cursor in the middle of the screen
 set guifont="Lucida Console 9"
 "set guioptions -=m            " remove menubar
 "set guioptions -=T            " remove toolbar
+
+highlight ColorColumn ctermbg=17 guibg=#101020
+highlight CursorLine cterm=NONE ctermbg=17 guibg=#101020
+highlight Comment ctermfg=blue
 
 autocmd Filetype perl setlocal ts=4 sts=4 sw=4
 autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
