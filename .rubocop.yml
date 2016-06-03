@@ -1,7 +1,7 @@
 Style/Documentation:
   Enabled: false
 
-Style/TrailingComma:
+Style/TrailingCommaInLiteral:
   Enabled: false
 
 Style/DotPosition:
