@@ -29,3 +29,6 @@
 
 [commit]
   template = ~/.git_commit_message
+
+[core]
+  excludesfile = ~/.gitignore.global

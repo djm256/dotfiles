@@ -12,7 +12,7 @@ DOTFILES=(
   .config/terminator
   .git_commit_message
   .gitconfig
-  .gitignore
+  .gitignore.global
   .gitmodules
   .irbrc
   .perlcriticrc
