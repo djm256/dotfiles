@@ -31,9 +31,12 @@ set colorcolumn=80
 set cursorline
 set number
 set scrolloff=999             " keep cursor in the middle of the screen
-set guifont="Lucida Console 9"
-"set guioptions -=m            " remove menubar
-"set guioptions -=T            " remove toolbar
+set guifont="Lucida Console 8"
+set guioptions -=m            " remove menubar
+set guioptions -=T            " remove toolbar
+set guioptions -=L            " hide left scroll bar
+set guioptions -=r            " hide right scroll bar
+set guioptions -=b            " hide bottom scroll bar
 
 highlight ColorColumn ctermbg=17 guibg=#101020
 highlight CursorLine cterm=NONE ctermbg=17 guibg=#101020
