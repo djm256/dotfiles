@@ -32,8 +32,8 @@ if has("gui_running")
   colorscheme darkblue
 
   set guifont="Lucida Console 8"
-  set guioptions -=m            " remove menubar
-  set guioptions -=T            " remove toolbar
+  "set guioptions -=m            " remove menubar
+  "set guioptions -=T            " remove toolbar
   set guioptions -=L            " hide left scroll bar
   set guioptions -=r            " hide right scroll bar
   set guioptions -=b            " hide bottom scroll bar
