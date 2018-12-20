@@ -81,42 +81,6 @@ psg() {
   fi
 }
 
-bundle-grep() {
-  grep -r "$@" `bundle show --paths`
-}
-
-#function git-bhist(){
-#    for k in `git branch | cut -b3-`; do
-#        echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k|head -n 1`\\t$k;
-#    done | sort -r
-#}
-
-# https://github.otbeach.com/gist/radek-molenda/673
-git_root_dir() { echo $(git rev-parse --show-toplevel); }
-
-otb_app_name() { echo "$1" | sed 's/\/current//' | sed 's/\/.*\/\(.*\)/\1/'; }
-
-otb_current_app() { otb_app_name $(git_root_dir); }
-
-current_branch() { git branch | grep '*' | cut -b3-; }
-
-otb_comparision_url() { echo "https://github.otbeach.com/onthebeach/$(otb_current_app)/compare/${1-master}...search-team:${2-$(current_branch)}"; }
-
-#it $WEB_BROWSER is not set it defaults to firefox
-otb_compare() { sensible-browser $(otb_comparision_url $1); }
-
-remote_branches() { for x in $(git remote); do git branch -r | sed -e"s/.*$x\///"; done | sort | uniq; return 0; }
-
-_remote_branches_complete_() {
-  reply=( $(remote_branches) )
-}
-
-stupid_spec() {
-  be spec `find spec -name '*_spec.rb' | sort`
-}
-
-compctl -K _remote_branches_complete_ otb_compare
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
