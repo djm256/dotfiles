@@ -71,8 +71,8 @@ alias xml='xml_pp'
 
 alias r='bundle exec rspec -rspec_helper'
 
-if [ -x ~/.otb/otb.sh ]; then
-    source $HOME/.otb/otb.sh
+if [ -x $HOME/bin/otb-shell-aliases.sh ]; then
+  source $HOME/bin/otb-shell-aliases.sh
 fi
 
 psg() {
