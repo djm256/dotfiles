@@ -4,6 +4,9 @@
 #
 # Global Order: zshenv, zprofile, zshrc, zlogin
 
+#==============================================================================
+echo "Antigen..."
+
 source ~/.antigen/antigen.zsh
 
 # Load the oh-my-zsh's library (used for themes mostly)
@@ -20,11 +23,6 @@ antigen theme gentoo
 
 # Tell antigen that you're done.
 antigen apply
-
-# Set up the prompt
-#autoload -Uz promptinit
-#promptinit
-#prompt adam1
 
 setopt histignorealldups
 setopt no_share_history
@@ -61,6 +59,31 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+#==============================================================================
+echo "RVM..."
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#==============================================================================
+echo "NVM..."
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+#==============================================================================
+echo "OTB Aliases..."
+
+if [ -x $HOME/bin/otb-shell-aliases.sh ]; then
+  source $HOME/bin/otb-shell-aliases.sh
+fi
+
+#==============================================================================
+clear
+
 alias e="$EDITOR"
 alias less="less -I"
 alias ls="ls --color=auto -F"
@@ -71,16 +94,12 @@ alias xml='xml_pp'
 
 alias r='bundle exec rspec -rspec_helper'
 
-if [ -x $HOME/bin/otb-shell-aliases.sh ]; then
-  source $HOME/bin/otb-shell-aliases.sh
-fi
-
 psg() {
   if [ "$*" != "" ]; then
     ps auxwww | grep $* | grep -v grep
   fi
 }
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+if [[ -e $HOME/bin/motivator.pl ]]; then
+  $HOME/bin/motivator.pl
+fi
