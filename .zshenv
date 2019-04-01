@@ -13,11 +13,12 @@
 umask 002
 ulimit -c unlimited
 
-export PAGER="less"
-export EDITOR="vim"
 export CONSOLEBROWSER="/usr/bin/links"
-export MAKEFLAGS=-j`grep -c ^processor /proc/cpuinfo`
+export EDITOR="vim"
 export LESS=' -R '
+export MAKEFLAGS=-j`grep -c ^processor /proc/cpuinfo`
+export MYSQL_PS1="(\u@\h) [\d]> "
+export PAGER="less"
 
 # Ruby GC settings for faster spec suite runs.
 # From https://github.otbeach.com/gist/matthew-house/696
