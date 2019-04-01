@@ -13,12 +13,16 @@ source ~/.antigen/antigen.zsh
 antigen use oh-my-zsh
 unsetopt auto_name_dirs
 
+echo "... git"
 antigen bundle git
+echo "... bundler"
 antigen bundle bundler
 
 # Syntax highlighting bundle.
+echo "... zsh-syntax-highlighting"
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+echo "... theme"
 antigen theme gentoo
 
 # Tell antigen that you're done.
