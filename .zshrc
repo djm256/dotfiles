@@ -86,7 +86,6 @@ if [ -x $HOME/bin/otb-shell-aliases.sh ]; then
 fi
 
 #==============================================================================
-clear
 
 alias e="$EDITOR"
 alias less="less -I"
