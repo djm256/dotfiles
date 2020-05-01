@@ -92,6 +92,13 @@ if [ -x $HOME/bin/otb-shell-aliases.sh ]; then
 fi
 
 #==============================================================================
+echo "OTB known hosts..."
+
+if [ -x $HOME/bin/otb-known-hosts.sh ]; then
+  $HOME/bin/otb-known-hosts.sh
+fi
+
+#==============================================================================
 
 alias e="$EDITOR"
 alias less="less -I"
