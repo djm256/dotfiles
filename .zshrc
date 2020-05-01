@@ -68,6 +68,12 @@ echo "RVM..."
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+
+#==============================================================================
+echo "perlbrew..."
+
+[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
+
 #==============================================================================
 echo "NVM..."
 

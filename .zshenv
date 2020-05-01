@@ -20,7 +20,7 @@ export MAKEFLAGS=-j`grep -c ^processor /proc/cpuinfo`
 export MYSQL_PS1="(\u@\h) [\d]> "
 export PAGER="less"
 
-export PERLLIB="$HOME/perl5/lib/perl5"
+export PERL5LIB="local/lib/perl5"
 
 if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ]; then
     export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
