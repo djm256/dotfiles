@@ -1,11 +1,17 @@
-AllCops:
-  TargetRubyVersion: 2.2
+#AllCops:
+  #TargetRubyVersion: 2.2
 
 Style/Documentation:
   Enabled: false
 
-Style/TrailingCommaInLiteral:
+Layout/DotPosition:
   Enabled: false
 
-Style/DotPosition:
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
   Enabled: false
