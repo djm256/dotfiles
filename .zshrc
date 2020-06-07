@@ -85,16 +85,16 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 #==============================================================================
-echo "OTB Aliases..."
 
 if [ -x $HOME/bin/otb-shell-aliases.sh ]; then
+  echo "OTB Aliases..."
   source $HOME/bin/otb-shell-aliases.sh
 fi
 
 #==============================================================================
-echo "OTB known hosts..."
 
 if [ -x $HOME/bin/otb-known-hosts.sh ]; then
+  echo "OTB known hosts..."
   $HOME/bin/otb-known-hosts.sh
 fi
 
