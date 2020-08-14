@@ -22,6 +22,13 @@ export PAGER="less"
 
 export PERL5LIB="local/lib/perl5"
 
+# The .NET Core tools collect usage data in order to help us improve your
+# experience. The data is anonymous and doesn't include command-line arguments.
+# The data is collected by Microsoft and shared with the community. You can
+# opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment
+# variable to '1' or 'true' using your favorite shell.
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
 if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ]; then
     export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 else
