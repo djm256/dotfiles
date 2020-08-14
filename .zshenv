@@ -34,8 +34,3 @@ if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ]; then
 else
     echo "source-highlight not installed"
 fi
-
-export PATH="$PATH:$HOME/bin:/sbin:/usr/sbin:$HOME/.rvm/bin"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
