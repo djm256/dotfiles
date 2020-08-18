@@ -17,7 +17,7 @@ export CONSOLEBROWSER="/usr/bin/links"
 export EDITOR="vim"
 export LESS=' -R '
 export MAKEFLAGS=-j`grep -c ^processor /proc/cpuinfo`
-export MYSQL_PS1="(\u@\h) [\d]> "
+export MYSQL_PS1="\R:\m:\s (\u@\h) [\d]> "
 export PAGER="less"
 
 export PERL5LIB="local/lib/perl5"
