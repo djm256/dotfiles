@@ -119,8 +119,6 @@ alias la='ls -a'
 alias lth='ls -lt | head'
 alias xml='xml_pp'
 
-alias r='bundle exec rspec -rspec_helper'
-
 psg() {
   if [ "$*" != "" ]; then
     ps auxwww | grep $* | grep -v grep
